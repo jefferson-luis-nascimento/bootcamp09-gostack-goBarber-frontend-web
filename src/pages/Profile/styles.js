@@ -3,12 +3,12 @@ import { darken } from 'polished';
 
 export const Container = styled.div`
   max-width: 600px;
-  margin: 50px auto;
+  margin: 10px auto;
 
   form {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 10px;
 
     input {
       background: rgba(0, 0, 0, 0.1);
@@ -35,7 +35,7 @@ export const Container = styled.div`
       border: 0;
       height: 1px;
       background: rgba(255, 255, 255, 0.2);
-      margin: 10px 0 20px;
+      margin: 0px 0 10px;
     }
 
     button {
