@@ -23,15 +23,16 @@ export default function Header() {
           <Notifications />
           <Profile>
             <div>
-              <strong>{profile.name}</strong>
+              <strong>{profile && profile.name}</strong>
               <Link to="/profile">Meu Perfil</Link>
             </div>
             <img
               src={
-                profile.avatar.url ||
-                'https://api.adorable.io/avatars/50/abott@adorable.png'
+                profile &&
+                (profile.avatar.url ||
+                  'https://api.adorable.io/avatars/50/abott@adorable.png')
               }
-              alt={profile.name}
+              alt={profile && profile.name}
             />
           </Profile>
         </aside>
